@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/output.css" />
+  <link
+    rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+  />
+  <title>TradeTime - Cursos</title>
+</head>
+<body class="bg-[#111111] font-Oswald text-white">
+
+  <!-- Banner Promocional -->
+  <div class="flex items-center justify-center bg-[#0a0a0a] text-center text-xs md:text-sm py-2 px-3">
+    <p>
+      <span class="font-semibold">Promoção:</span>
+      Desconto exclusivo de <span class="text-green-400 font-bold">30%</span> para Estudantes da
+      <span class="text-blue-500 font-semibold">Universidade Cruzeiro do Sul!</span>
+    </p>
+  </div>
+
+  <!-- Header -->
+  <header class="py-3 px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+    <!-- Logo -->
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-400 tracking-wide">TradeTime</h1>
+
+    <!-- Barra de pesquisa -->
+    <div class="flex items-center bg-[#0f0f0f] px-3 py-2 rounded-md w-full md:w-1/3">
+      <i class="las la-search text-gray-500 text-lg"></i>
+      <input
+        type="text"
+        placeholder="Digite aqui sua pesquisa:"
+        class="bg-transparent text-gray-300 placeholder-gray-500 outline-none ml-2 w-full text-sm"
+      />
+    </div>
+
+    <!-- Área de perfil e saldo -->
+    <div class="flex items-center gap-10">
+      
+      <!-- Time Points -->
+      <div class="flex items-center gap-2">
+        <img src="./assets/moeda-semfundo.png" alt="Time-Points" class="w-6 h-6 object-contain" />
+        <span class="text-sm font-semibold text-white" id="timePoints">0</span>
+      </div>
+
+      <!-- Perfil e saldo -->
+      <div class="flex items-center gap-4">
+       
+        <i class="las la-wallet text-xl text-gray-300"></i>
+        <span class="text-sm font-semibold text-white">R$ 50,00</span>
+         <i class="las la-user text-2xl text-gray-300"></i>
+      </div>
+    </div>
+
+  </header>
+  <section>
+    <img src="./assets/foto-1.jpg" alt="mulher-de-oculos" class="w-full h-100 object-cover">
+    <div class="absolute top-60 left-320 font-bold w-130">
+
+    <h2 class=" text-4xl uppercase ">Aprenda, evolua e ganhe recompensas!</h2>
+    <p class="text-gray-400">Compre cursos com dinheiro ou use suas moedas acumuladas assistindo anúncios e ficando ativo no site.</p>
+
+    </div>
+  </section>
+  <main class="m-10">
+    <h1 class="text-4xl uppercase font-bold">Cursos Recomendados</h1>
+    <p class="text-gray-500 text-lg font-bold">Cursos recomendados pelos nossos alunos top 10</p>
+
+ <!-- Cards de cursos -->
+<section class="flex justify-baseline gap-10 items-center p-4">
+
+  <!--Card 1-->
+  <div class="bg-[#191919] w-72 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
+    
+    <!-- Imagem -->
+    <img 
+      src="./assets/devsquad.jpg" 
+      alt="foto-curso1" 
+      class="w-full h-40 object-cover rounded-t-2xl"
+    />
+
+    <!-- Conteúdo -->
+    <div class="p-4 flex flex-col justify-between h-40">
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-1">Banco de Dados</h3>
+        <p class="text-gray-400 text-sm">Aprenda a estruturar e gerenciar bancos de dados do zero.</p>
+      </div>
+
+      <!-- Botões -->
+      <div class="flex items-center justify-between mt-4">
+        <button class="btn-comprar border border-yellow-400 text-yellow-400 text-sm px-3 py-1 rounded-lg hover:bg-yellow-400 hover:text-black transition" data-preco="500">
+          500 Pontos
+        </button>
+        <button class="border border-green-400 text-green-400 text-sm px-3 py-1 rounded-lg hover:bg-green-400 hover:text-black transition">
+          R$ 120
+        </button>
+      </div>
+    </div>
+
+  </div>
+ <!--Card 2-->
+  <div class="bg-[#191919] w-72 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
+    
+    <!-- Imagem -->
+    <img 
+      src="./assets/devsquad.jpg" 
+      alt="foto-curso1" 
+      class="w-full h-40 object-cover rounded-t-2xl"
+    />
+
+    <!-- Conteúdo -->
+    <div class="p-4 flex flex-col justify-between h-40">
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-1">Banco de Dados</h3>
+        <p class="text-gray-400 text-sm">Aprenda a estruturar e gerenciar bancos de dados do zero.</p>
+      </div>
+
+      <!-- Botões -->
+      <div class="flex items-center justify-between mt-4">
+        <button class="btn-comprar border border-yellow-400 text-yellow-400 text-sm px-3 py-1 rounded-lg hover:bg-yellow-400 hover:text-black transition" data-preco="400">
+          400 Pontos
+        </button>
+        <button class="border border-green-400 text-green-400 text-sm px-3 py-1 rounded-lg hover:bg-green-400 hover:text-black transition">
+          R$ 120
+        </button>
+      </div>
+    </div>
+
+  </div>
+<!--Card 3-->
+  <div class="bg-[#191919] w-72 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
+    
+    <!-- Imagem -->
+    <img 
+      src="./assets/devsquad.jpg" 
+      alt="foto-curso1" 
+      class="w-full h-40 object-cover rounded-t-2xl"
+    />
+
+    <!-- Conteúdo -->
+    <div class="p-4 flex flex-col justify-between h-40">
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-1">Banco de Dados</h3>
+        <p class="text-gray-400 text-sm">Aprenda a estruturar e gerenciar bancos de dados do zero.</p>
+      </div>
+
+      <!-- Botões -->
+      <div class="flex items-center justify-between mt-4">
+        <button class="btn-comprar border border-yellow-400 text-yellow-400 text-sm px-3 py-1 rounded-lg hover:bg-yellow-400 hover:text-black transition" data-preco="500">
+          500 Pontos
+        </button>
+        <button class="border border-green-400 text-green-400 text-sm px-3 py-1 rounded-lg hover:bg-green-400 hover:text-black transition">
+          R$ 120
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Card 4-->
+  <div class="bg-[#191919] w-72 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
+    
+    <!-- Imagem -->
+    <img 
+      src="./assets/devsquad.jpg" 
+      alt="foto-curso1" 
+      class="w-full h-40 object-cover rounded-t-2xl"
+    />
+
+    <!-- Conteúdo -->
+    <div class="p-4 flex flex-col justify-between h-40">
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-1">Banco de Dados</h3>
+        <p class="text-gray-400 text-sm">Aprenda a estruturar e gerenciar bancos de dados do zero.</p>
+      </div>
+
+      <!-- Botões -->
+      <div class="flex items-center justify-between mt-4">
+        <button class="btn-comprar border border-yellow-400 text-yellow-400 text-sm px-3 py-1 rounded-lg hover:bg-yellow-400 hover:text-black transition"data-preco="500">
+          500 Pontos
+        </button>
+        <button class="border border-green-400 text-green-400 text-sm px-3 py-1 rounded-lg hover:bg-green-400 hover:text-black transition">
+          R$ 120
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <!--Card 5-->
+  <div class="bg-[#191919] w-72 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300">
+    
+    <!-- Imagem -->
+    <img 
+      src="./assets/devsquad.jpg" 
+      alt="foto-curso1" 
+      class="w-full h-40 object-cover rounded-t-2xl"
+    />
+
+    <!-- Conteúdo -->
+    <div class="p-4 flex flex-col justify-between h-40">
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-1">Banco de Dados</h3>
+        <p class="text-gray-400 text-sm">Aprenda a estruturar e gerenciar bancos de dados do zero.</p>
+      </div>
+
+      <!-- Botões -->
+      <div class="flex items-center justify-between mt-4">
+        <button class="btn-comprar border border-yellow-400 text-yellow-400 text-sm px-3 py-1 rounded-lg hover:bg-yellow-400 hover:text-black transition"data-preco="500">
+          500 Pontos
+        </button>
+        <button class="border border-green-400 text-green-400 text-sm px-3 py-1 rounded-lg hover:bg-green-400 hover:text-black transition">
+          R$ 120
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="text-gray-500" type="button">Ver mais...</button>
+</section>
+
+<!--Card dos professores-->
+
+ <!-- Section Professores -->
+<!-- Seção dos Professores -->
+<section class="px-6 py-16 text-white">
+  <h2 class="text-3xl md:text-4xl uppercase font-bold text-center mb-2">
+    Alguns dos nossos Professores
+  </h2>
+  <p class="text-gray-400 text-center mb-10">
+    Alguns dos nossos mestres de TI
+  </p>
+
+  <div class="flex items-center justify-center gap-4 relative">
+    <!-- Botão esquerda -->
+    <button
+      class="hidden md:flex items-center justify-center bg-[#191919] rounded-full w-10 h-10 hover:bg-[#2a2a2a] transition absolute left-0"
+    >
+      <i class="las la-arrow-left text-2xl"></i>
+    </button>
+
+    <!-- Card principal -->
+    <div
+      class="bg-[#191919] rounded-2xl shadow-lg p-6 flex flex-col md:flex-row items-center md:items-start gap-6 max-w-5xl w-full"
+    >
+      <!-- Imagem -->
+      <div class="flex-shrink-0">
+        <img
+          src="./assets/Prof-Beatriz.png"
+          alt="Foto da professora Beatriz Yamamoto"
+          class="w-48 h-48 object-cover rounded-full border-4 border-[#2a2a2a] mx-auto md:mx-0"
+        />
+      </div>
+
+      <!-- Texto -->
+      <div class="text-left space-y-2">
+        <h3 class="text-2xl font-bold">PROFA. BEATRIZ YAMAMOTO</h3>
+        <p class="text-gray-300">Doutorado em Tecnologia Front-End</p>
+
+        <p class="text-gray-300 text-sm leading-relaxed">
+          <strong>Especialidade:</strong> React, Tailwind, UI/UX e animações web.<br />
+          <strong>Estilo de ensino:</strong> Prático e visual — sempre abre o VS Code e mostra o código rodando.
+          Curte dar mini desafios e gamificar as aulas.<br />
+          <strong>Curiosidade:</strong> Gosta de transformar projetos antigos dos alunos em templates open-source.<br />
+          <strong>Frase marcante:</strong> “Se não deu erro, você não programou direito ainda.”
+        </p>
+      </div>
+    </div>
+
+    <!-- Botão direita -->
+    <button
+      class="hidden md:flex items-center justify-center bg-[#191919] rounded-full w-10 h-10 hover:bg-[#2a2a2a] transition absolute right-0"
+    >
+      <i class="las la-arrow-right text-2xl"></i>
+    </button>
+  </div>
+</section>
+
+<!-- Seção Time-Points -->
+<section class="w-full  text-white py-16 px-8 md:px-20 flex flex-col md:flex-row items-center justify-between gap-10">
+  
+  <!-- Texto -->
+  <div class="flex-1 max-w-2xl">
+    <h2 class="uppercase text-3xl md:text-5xl font-bold mb-6 text-gray-100">
+      O que são <span class="text-yellow-400">Time-Points</span>
+    </h2>
+    <p class="text-gray-300 leading-relaxed text-justify md:text-left text-base md:text-lg">
+      Os <span class="text-yellow-400 font-semibold">Time-Points</span> são a moeda fictícia da 
+      <span class="font-semibold text-gray-100">TradeTime</span>, usados pra trocar por cursos dentro da plataforma.
+      <br><br>
+      Você ganha Time-Points de duas formas simples:
+      <br><br>
+      ⏱️ <strong>Ficando ativo no site:</strong> a cada 1 minuto, você ganha 
+      <span class="text-yellow-400 font-bold">+100 Time-Points</span> automaticamente.
+      <br>
+      🎬 <strong>Assistindo anúncios:</strong> a cada anúncio assistido, você recebe 
+      <span class="text-yellow-400 font-bold">+200 Time-Points</span> extras.
+      <br><br>
+      Com seus Time-Points acumulados, dá pra comprar cursos sem gastar dinheiro real — 
+      só curtindo e participando da comunidade!
+    </p>
+  </div>
+
+  <!-- Imagem -->
+  <div class="flex-1 flex justify-center">
+    <img 
+      src="./assets/moeda-semfundo.png" 
+      alt="Moeda Time-Points" 
+      class="w-100 h-100 md:w-100 md:h-100 object-contain drop-shadow-[0_0_25px_rgba(255,215,0,0.4)] animate-pulse"
+    />
+  </div>
+
+</section>
+<a 
+id="watchAd"
+  href="https://www.youtube.com" 
+  target="_blank" 
+  class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 rounded-lg shadow-md transition-all duration-200"
+>
+  <i class="las la-ad text-xl"></i>
+  Assista ao anúncio e ganhe <span class="text-red-600">+200 Time-Points!</span>
+</a>
+
+
+
+
+  </main>
+
+
+   <!-- SCRIPT TIME-POINTS -->
+  <script>
+    // Função pra pegar ou criar o saldo salvo
+    let pontos = parseInt(localStorage.getItem("timePoints")) || 0;
+    const pontosSpan = document.getElementById("timePoints");
+    const botaoAd = document.getElementById("watchAd");
+    const botoesComprar = document.querySelectorAll(".btn-comprar");
+
+    // Atualiza o valor na tela
+    function atualizarPontos() {
+      pontosSpan.textContent = pontos;
+      localStorage.setItem("timePoints", pontos);
+    }
+
+    atualizarPontos();
+
+    // A cada 1 min ativo = +100 pontos
+    setInterval(() => {
+      pontos += 100;
+      atualizarPontos();
+      console.log("⏱️ +100 Time-Points por tempo ativo!");
+    }, 60000);
+
+    // Clique no anúncio = +200 pontos
+    botaoAd.addEventListener("click", () => {
+      pontos += 200;
+      atualizarPontos();
+      alert("🎉 Você ganhou +200 Time-Points por assistir ao anúncio!");
+    });
+
+    // Comprar curso com pontos
+    botoesComprar.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const preco = parseInt(btn.getAttribute("data-preco"));
+        if (pontos >= preco) {
+          pontos -= preco;
+          atualizarPontos();
+          alert(`✅ Curso comprado com sucesso por ${preco} Time-Points!`);
+        } else {
+          alert("❌ Você não tem pontos suficientes!");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
